@@ -1,0 +1,32 @@
+body {
+    background-color: #00c787;
+    display:flex;
+    justify-content:center;
+}
+.操作面板 {
+    background-color: white;
+    width: 300px;
+    padding: 30px;
+    margin-top:50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.輸入區域{
+    display:  flex;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.文字欄{
+    flex-grow: 1;
+    border:none;
+    background-color: #F0F4F8;
+    padding: 10px 15px;
+    outline: none;
+}
+.按鈕{
+    background-color: #00c787;
+    border:none;
+    color:white;
+    padding: 10px 15px;
+    cursor: pointer;
+}
