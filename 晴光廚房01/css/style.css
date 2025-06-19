@@ -1,0 +1,301 @@
+@charset "utf-8";
+/* 專案註解
+ * Page name
+ * Copyright 2020
+ * Author
+ * Licensed
+ */
+/* -------------------------- *\
+	Content 目錄 內容
+\* -------------------------- */
+/**
+ * Content ............ You are reading it!
+ * Globel ............ Set common styles
+ * Layout ............ Set grid styles
+ * Component ............ Set component styles
+ */
+
+/* -------------------------- *\
+	Globel
+\* -------------------------- */
+*{
+	box-sizing: border-box;
+	position: relative;
+	/* (*)全域選擇器 */
+}
+html,body{
+	font-family: '微軟正黑體', arial;
+	/* 網頁文字 */
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+	/* 初始歸零 */
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	/* 初始歸零 */
+}
+a{
+	text-decoration: none;
+	color: #333;
+	/* 初始設定 */
+}
+
+/* -------------------------- *\
+	Layout
+\* -------------------------- */
+.container{
+	width: 1200px;
+	margin: 0 auto;
+	padding-left: 16px;
+	padding-right: 16px;
+	/* border: 1px solid #ccc; */
+}
+.row{
+	/*border: 1px solid blue;*/
+	margin-left: -16px;
+	margin-right: -16px;
+}
+.row:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.col-1-2,.col-1-3,.col-1-4{
+	/* border: 1px solid red; */
+	float: left;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+.col-1-2{
+	width: 50%;
+}
+.col-1-3{
+	width: 33.333333%;
+}
+.col-1-4{
+	width: 25%;
+}
+/* btn */
+.btn{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 4px 16px;
+	border: 1px solid #fff;
+	color: #fff;
+	border-radius: 4px;
+	transition: all 0.3s;
+}
+/* 主要的按鈕 */
+.btn.btn-primary{
+	background-color: #d5a26f;
+	border: 1px solid #d5a26f;
+	color: #fff;
+}
+.btn.btn-primary:hover{
+	background-color: #b2875c;
+	border: 1px solid #b2875c;
+}
+/* 次要的按鈕 */
+.btn.btn-secondary{
+	border: 1px solid #d5a26f;
+	color: #d5a26f;
+}
+.btn.btn-secondary:hover{
+	background-color: #d5a26f;
+	color: #fff;
+}
+/* 大小的設定 */
+.btn.btn-lg{
+	padding: 8px 32px;
+}
+.btn-group-center{
+	/*border: 1px solid #fff;*/
+	text-align: center;
+}
+.btn-group-center .btn{
+	margin-left: 12px;
+	margin-right: 12px;
+}
+.btn-group-right{
+	text-align: right;
+}
+.btn-group-right .btn{
+	margin-left: 24px;
+}
+
+/* -------------------------- *\
+	Layout
+\* -------------------------- */
+.container{
+	width: 1200px;
+	margin: 0 auto;
+	padding-left: 16px;
+	padding-right: 16px;
+/* 導覽列置中設定 */
+}
+
+
+/* -------------------------- *\
+	container
+\* -------------------------- */
+/* navbar 導行列設定 */
+.navbar{
+	/* border: 1px solid #000;  */
+	height: 64px;
+	background-color: rgb(255, 255, 255);
+}
+.navbar .brand{
+	display: inline-block;
+	vertical-align: top;
+	/* 通常在一起使用 */
+	/* border: 1px solid #000; */
+	width: 350px;
+	height: 64px;
+	background-image: url('../images/common/1660307441393.jpg');
+	background-size: 400px 150px;
+	background-position: center;
+	/* logo 設定 */
+	/*  */
+	white-space: nowrap;
+	text-indent: 100%;
+	overflow: hidden;
+	/* 把關鍵字隱藏在按鈕裡 */
+}
+.navbar .nav{
+	float: right;
+	/* 浮動到右邊 */
+}
+.navbar .nav .nav-item{
+	float: left;
+	/* 浮動到左邊 */
+}
+.navbar .nav .nav-link{
+	display: block;
+	line-height: 24px;
+	padding: 20px 16px;
+	/* border: 1px solid #000; */
+	transition: color 0.1s;
+	/* 導航按鈕設定  */
+	
+}
+
+	
+
+
+.navbar .nav .nav-link:hover{
+	color: rgb(255, 0, 0);
+	/* 為互動設計 按鈕變色 */
+	
+}
+/* jumbotron  主畫面 */
+.jumbotron{
+	/* border: 1px solid #000; */
+	padding-top: 224px;
+	padding-bottom: 160px;
+	background-image: url('../images/common/0918.jpg');
+	background-size: 100% 100%;
+	/* background-repeat: no-repeat; */
+}
+.reservation{
+
+	padding-top: 300px;
+	padding-bottom: 450px;
+	background-image: url('../images/products/1651807147732.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+/* hero */
+.hero{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	/* border: 1px solid #000; */
+}
+.hero.hero-bg-white{
+	background-color: #fefefe;
+}
+/* image-container */
+.image-container{
+	width: 100%;
+	/* border: 1px solid #000; */
+}
+.image-container:before{
+	content: '';
+	display: block;
+	width: 100%;
+	padding-top: 75%;
+}
+.image-container .image{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.hero.hero-bg-grey{
+	background-color:#efefef
+	
+}
+.about-preview .title{
+	font-size:32px;
+	color: #333;
+	margin-bottom: 24px;
+	margin-top: 40px;
+}
+.about-preview .para{
+	font-size: 16px;
+	line-height: 32px;
+	text-align: justify;
+	color: #333;
+	margin-bottom: 24px;
+}
+.about-preview .food{
+	font-size: 16px;
+	line-height: 32px;
+	width: 210px;
+	float: left;
+	display:inline-block;
+	color: #333;
+	
+}
+/* contact-info */
+.contact-info{
+	padding-top: 40px;
+}
+.contact-info .info-item{
+	margin-bottom: 24px;
+}
+.contact-info .info-item .title{
+	color: #d5a26f;
+	line-height: 36px;
+	margin-bottom: 16px;
+}
+.contact-info .info-item .title span{
+	border-bottom: 2px solid #d5a26f;
+	display: inline-block;
+}
+.contact-info .info-item .info{
+	line-height: 32px;
+	color: #333;
+}
+/* map-container */
+.map-container{
+	width: 100%;
+	padding-top: 75%;
+	/* border: 1px solid #000; */
+}
+.map-container iframe{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
