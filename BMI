@@ -1,0 +1,28 @@
+let height = 175 ; //單位 公分
+let weight = 85 ; //單位 公斤
+
+let bmi = weight / ((height/100)**2) ;
+
+if (bmi<=0 || isNaN(bmi)){
+   console.log("輸入錯誤")
+}
+else if(bmi < 18.5){
+  console.log("過輕")
+}
+else if(bmi < 23.9){
+  console.log("正常")
+}
+else if(bmi < 26.9){
+  console.log("過重")
+}
+else if(bmi < 29.9){
+  console.log("輕度肥胖")
+}
+else if(bmi < 34.9){
+  console.log("中度肥胖")
+}
+else {
+  console.log("重度肥胖")
+}
+
+console.log(bmi.toFixed(2))
