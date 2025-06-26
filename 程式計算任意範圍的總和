@@ -1,0 +1,12 @@
+let input = prompt("請輸入一個正整數");
+let inputNum = Number(input);
+let sum = 0;
+
+if (isNaN(inputNum) || inputNum < 1) {
+  console.log("❌ 請輸入有效的正整數");
+} else {
+  for (let i = 1; i <= inputNum; i++) {
+    sum += i;
+  }
+  console.log("✅ 1 到 " + inputNum + " 的總和為：" + sum);
+}
